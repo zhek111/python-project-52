@@ -8,12 +8,12 @@
 
       <h1 class="my-4">
         
-Регистрация
+Удаление Статуса
 
       </h1>
-
+      
+<p>Вы уверены, что хотите удалить статус "{{ object }}"?</p>
 <form method="post">{% csrf_token %}
-    {% bootstrap_form form %}
-    {% buttons submit='Зарегестрировать' %}{% endbuttons %}
+   <input class="btn btn-danger" type="submit" value="Да, удалить">
 </form>
 {% endblock content %}

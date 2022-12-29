@@ -4,9 +4,16 @@
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
 {% block content %}
-  <h1 class="my-4">Обновление пользователя</h1>
-  <form method="post">{% csrf_token %}
+
+
+      <h1 class="my-4">
+        
+Изменение пользователя
+
+      </h1>
+
+<form method="post">{% csrf_token %}
     {% bootstrap_form form %}
-    {% buttons submit='Обновить' %}{% endbuttons %}
-  </form>
+    {% buttons submit='Изменить' %}{% endbuttons %}
+</form>
 {% endblock content %}

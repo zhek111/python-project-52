@@ -8,12 +8,12 @@
 
       <h1 class="my-4">
         
-Регистрация
+Создание задачи
 
       </h1>
 
 <form method="post">{% csrf_token %}
     {% bootstrap_form form %}
-    {% buttons submit='Зарегестрировать' %}{% endbuttons %}
+    {% buttons submit='Задачу создать' %}{% endbuttons %}
 </form>
 {% endblock content %}

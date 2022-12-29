@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% block content %}
+<h1 class="my-4">
+
+
+    {% trans "Задачи" %}
+
+</h1>
+    <a class="btn btn-primary btn-lg" href="{% url 'create_task' %}">{% trans "Создать задачу" %}</a>
+    <form method="GET" class="form-inline" action="{% url 'list_tasks' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">{% trans "Фильтровать" %}</button>
+</form>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>{% trans "ID" %}</th>
+        <th>{% trans "Имя" %}</th>
+        <th>{% trans "Статус" %}</th>
+        <th>{% trans "Автор" %}</th>
+        <th>{% trans "Исполнитель" %}</th>
+        <th>{% trans "Дата создания" %}</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task.id }}</td>
+                <td>  <a href="{% url 'watch_task' task.id %}">{{ task.name }}</a></td>
+                <td>{{ task.status }}</td>
+                    <td>{{ task.author }}</td>
+                    <td>{{ task.executor }}</td>
+                    <td>{{ task.created_at }}</td>
+                <td>
+                    <a href="{% url 'update_task' task.id %}">{% trans "Изменить" %}</a>
+                    <br>
+                    <a href="{% url 'delete_task' task.id %}">{% trans "Удалить" %}</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

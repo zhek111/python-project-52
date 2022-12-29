@@ -9,6 +9,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'list_users'%}">{% trans "Пользователи" %}</a>
             </li>
+            {% if user.is_authenticated %}
+             <li class="nav-item">
+                <a class="nav-link" href="{% url 'list_statuses'%}">{% trans "Статусы" %}</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'list_labels'%}">{% trans "Метки" %}</a>
+            </li>  
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'list_tasks'%}">{% trans "Задачи" %}</a>
+            </li>  
+            {% endif %}
+            
 
         </ul>
         <ul class="navbar-nav">
