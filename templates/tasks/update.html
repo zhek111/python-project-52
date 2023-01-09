@@ -8,12 +8,12 @@
 
       <h1 class="my-4">
       
-      Обновление
+      {% trans 'Update' %}
 
       </h1>
 
 <form method="post">{% csrf_token %}
     {% bootstrap_form form %}
-    {% buttons submit='Обновить' %}{% endbuttons %}
+   <input class="btn btn-primary" type="submit" value={% trans 'Update' %}>
 </form>
 {% endblock content %}

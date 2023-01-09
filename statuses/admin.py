@@ -1,8 +1,9 @@
 from django.contrib import admin
-from statuses.models import Statuses
+from statuses.models import Status
 
 
 class StatusAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Statuses, StatusAdmin)
+
+admin.site.register(Status, StatusAdmin)

@@ -8,12 +8,12 @@
 
       <h1 class="my-4">
         
-Удаление Статуса
+{% trans 'Deleting a label' %}
 
       </h1>
       
-<p>Вы уверены, что хотите удалить статус "{{ object }}"?</p>
+<p>{% trans 'Are you sure you want to delete' %} {{ object }}?</p>
 <form method="post">{% csrf_token %}
-   <input class="btn btn-danger" type="submit" value="Да, удалить">
+   <input class="btn btn-danger" type="submit" value={% trans 'Yes, delete' %}>
 </form>
 {% endblock content %}

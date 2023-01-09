@@ -1,30 +1,30 @@
 from django import forms
 from users.models import User
-from labels.models import Labels
+from labels.models import Label
 from django.forms import ModelForm
-
-from statuses.models import Statuses
-from tasks.models import Tasks
+from statuses.models import Status
+from tasks.models import Task
+from django.utils.translation import gettext_lazy as _
 
 class TaskCreateChangeForm(ModelForm):
     class Meta:
-        model = Tasks
+        model = Task
         fields = ['name', 'description', 'status', 'executor', 'labels']
+
 
 class TaskFilterForm(forms.Form):
     status = forms.ModelChoiceField(
-        queryset=Statuses.objects.all(),
+        queryset=Status.objects.all(),
         required=False,
-        label='Статус'
+
     )
     executor = forms.ModelChoiceField(
         queryset=User.objects.all(),
         required=False,
-        label='Исполнитель'
     )
     labels = forms.ModelMultipleChoiceField(
-        queryset=Labels.objects.all(),
+        queryset=Label.objects.all(),
         required=False,
-        label='Метки'
     )
-    only_my_tasks = forms.BooleanField(required=False, label='Только мои задачи')
+    only_my_tasks = forms.BooleanField(required=False,
+                                       label=_("Only my tasks"))

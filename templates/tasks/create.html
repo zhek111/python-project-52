@@ -7,13 +7,13 @@
 
 
       <h1 class="my-4">
-        
-Создание задачи
+
+          {% trans 'Create task' %}
 
       </h1>
 
 <form method="post">{% csrf_token %}
     {% bootstrap_form form %}
-    {% buttons submit='Задачу создать' %}{% endbuttons %}
+        <input class="btn btn-primary" type="submit" value={% trans 'Create' %}>
 </form>
 {% endblock content %}
