@@ -23,3 +23,12 @@ class LogoutUserView(LogoutView):
     def dispatch(self, request, *args, **kwargs):
         messages.success(request, _('You are logged out'))
         return super().dispatch(request, *args, **kwargs)
+
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    a = None
+    a.hello() # Creating an error with an invalid line of code
+    return HttpResponse("Hello, world. You're at the pollapp index.")
