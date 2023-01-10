@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 13:50+0300\n"
+"POT-Creation-Date: 2023-01-10 13:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgstr "Дата создания"
 
 #: templates/labels/index.html:30 templates/statuses/index.html:30
 #: templates/tasks/detail.html:49 templates/tasks/index.html:43
-#: templates/users/index.html:33
+#: templates/users/index.html:33 templates/users/update.html:17
 msgid "Change"
 msgstr "Изменить"
 
@@ -175,7 +175,6 @@ msgstr "Удалить"
 #: templates/labels/update.html:11 templates/labels/update.html:17
 #: templates/statuses/update.html:11 templates/statuses/update.html:17
 #: templates/tasks/update.html:11 templates/tasks/update.html:17
-#: templates/users/update.html:17
 msgid "Update"
 msgstr "Обновить"
 
