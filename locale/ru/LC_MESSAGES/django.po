@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 19:47+0300\n"
+"POT-Creation-Date: 2023-01-10 13:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,13 +200,17 @@ msgstr "Задачи"
 msgid "Exit"
 msgstr "Выход"
 
-#: templates/navigation.html:37 templates/registration/login.html:14
+#: templates/navigation.html:37
 msgid "Enter"
 msgstr "Вход"
 
 #: templates/navigation.html:40 templates/users/create.html:10
 msgid "Registration"
 msgstr "Регистрация"
+
+#: templates/registration/login.html:14
+msgid "Come in"
+msgstr "Войти"
 
 #: templates/statuses/delete.html:11
 msgid "Delete status"
@@ -260,27 +264,27 @@ msgstr "Полное имя"
 msgid "Change users"
 msgstr "Изменение пользователя"
 
-#: users/views.py:24
+#: users/views.py:22
 msgid "User successfully registered"
 msgstr "Пользователь успешно зарегистрирован"
 
-#: users/views.py:32
+#: users/views.py:30
 msgid "User changed successfully"
 msgstr "Пользователь успешно изменён"
 
-#: users/views.py:42
+#: users/views.py:40
 msgid "You do not have permission to change another user"
 msgstr "У вас нет прав для изменения другого пользователя."
 
-#: users/views.py:52
+#: users/views.py:50
 msgid "User deleted successfully"
 msgstr "Пользователь успешно удалён"
 
-#: users/views.py:61
+#: users/views.py:60
 msgid "You do not have permission to delete another user"
 msgstr "У вас нет прав для изменения другого пользователя."
 
-#: users/views.py:66
+#: users/views.py:65
 msgid "Unable to delete user because he used"
 msgstr "Невозможно удалить пользователя, потому что он используется"
 
