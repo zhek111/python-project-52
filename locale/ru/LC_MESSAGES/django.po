@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 13:56+0300\n"
+"POT-Creation-Date: 2023-01-10 15:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,13 +80,25 @@ msgstr "Только свои задачи"
 msgid "description"
 msgstr "Описание"
 
-#: tasks/models.py:24
+#: tasks/models.py:21
+#, fuzzy
+#| msgid "Status"
+msgid "status"
+msgstr "Статус"
+
+#: tasks/models.py:25
 msgid "author"
 msgstr "Автор"
 
-#: tasks/models.py:28
+#: tasks/models.py:29
 msgid "executor"
 msgstr "Исполнитель"
+
+#: tasks/models.py:34
+#, fuzzy
+#| msgid "Labels"
+msgid "labels"
+msgstr "Метки"
 
 #: tasks/views.py:50
 msgid "Task created successfully"
@@ -160,9 +172,11 @@ msgstr "Имя"
 msgid "Date of creation"
 msgstr "Дата создания"
 
-#: templates/labels/index.html:30 templates/statuses/index.html:30
+#: templates/labels/index.html:30 templates/labels/update.html:17
+#: templates/statuses/index.html:30 templates/statuses/update.html:17
 #: templates/tasks/detail.html:49 templates/tasks/index.html:43
-#: templates/users/index.html:33 templates/users/update.html:17
+#: templates/tasks/update.html:17 templates/users/index.html:33
+#: templates/users/update.html:17
 msgid "Change"
 msgstr "Изменить"
 
@@ -172,9 +186,8 @@ msgstr "Изменить"
 msgid "Delete"
 msgstr "Удалить"
 
-#: templates/labels/update.html:11 templates/labels/update.html:17
-#: templates/statuses/update.html:11 templates/statuses/update.html:17
-#: templates/tasks/update.html:11 templates/tasks/update.html:17
+#: templates/labels/update.html:11 templates/statuses/update.html:11
+#: templates/tasks/update.html:11
 msgid "Update"
 msgstr "Обновить"
 
