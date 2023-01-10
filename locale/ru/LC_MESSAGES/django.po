@@ -81,8 +81,7 @@ msgid "description"
 msgstr "Описание"
 
 #: tasks/models.py:21
-#, fuzzy
-#| msgid "Status"
+
 msgid "status"
 msgstr "Статус"
 
@@ -95,8 +94,7 @@ msgid "executor"
 msgstr "Исполнитель"
 
 #: tasks/models.py:34
-#, fuzzy
-#| msgid "Labels"
+
 msgid "labels"
 msgstr "Метки"
 
