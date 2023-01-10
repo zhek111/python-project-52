@@ -50,7 +50,7 @@ msgstr "Статус успешно изменён"
 
 #: statuses/views.py:47
 msgid "status successfully deleted"
-msgstr "Статус успешно удален"
+msgstr "Статус успешно удалён"
 
 #: statuses/views.py:52
 msgid "Can't delete status because it's in use"
