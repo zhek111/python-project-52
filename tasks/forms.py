@@ -16,15 +16,17 @@ class TaskFilterForm(forms.Form):
     status = forms.ModelChoiceField(
         queryset=Status.objects.all(),
         required=False,
-
+        label=_("Status")
     )
     executor = forms.ModelChoiceField(
         queryset=User.objects.all(),
         required=False,
+        label=_("Executor")
     )
     labels = forms.ModelMultipleChoiceField(
         queryset=Label.objects.all(),
         required=False,
+        label=_("Label")
     )
     only_my_tasks = forms.BooleanField(required=False,
                                        label=_("Only my tasks"))

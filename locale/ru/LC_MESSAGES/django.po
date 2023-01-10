@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 15:01+0300\n"
+"POT-Creation-Date: 2023-01-10 15:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,22 @@ msgstr ""
 msgid "You are logged out"
 msgstr "Вы разлогинены"
 
-#: tasks/forms.py:30
+#: tasks/forms.py:19 templates/tasks/detail.html:30
+#: templates/tasks/index.html:26
+msgid "Status"
+msgstr "Статус"
+
+#: tasks/forms.py:24 templates/tasks/detail.html:26
+#: templates/tasks/index.html:28
+msgid "Executor"
+msgstr "Исполнитель"
+
+#: tasks/forms.py:29
+
+msgid "Label"
+msgstr "Метка"
+
+#: tasks/forms.py:32
 msgid "Only my tasks"
 msgstr "Только свои задачи"
 
@@ -81,7 +96,6 @@ msgid "description"
 msgstr "Описание"
 
 #: tasks/models.py:21
-
 msgid "status"
 msgstr "Статус"
 
@@ -94,7 +108,6 @@ msgid "executor"
 msgstr "Исполнитель"
 
 #: tasks/models.py:34
-
 msgid "labels"
 msgstr "Метки"
 
@@ -245,14 +258,6 @@ msgstr "Просмотр задачи"
 #: templates/tasks/detail.html:22 templates/tasks/index.html:27
 msgid "Author"
 msgstr "Автор"
-
-#: templates/tasks/detail.html:26 templates/tasks/index.html:28
-msgid "Executor"
-msgstr "Исполнитель"
-
-#: templates/tasks/detail.html:30 templates/tasks/index.html:26
-msgid "Status"
-msgstr "Статус"
 
 #: templates/tasks/index.html:17
 msgid "Show"
